@@ -1,0 +1,128 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/********************float*****************/
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    background: Turquoise;
+  }
+  .first_fl::after{
+    content: "";
+    clear: both;
+    display: block;
+  }
+  .second_fl::after{
+    content: "";
+    clear: both;
+    display: block;
+  }
+  .third_fl::after{
+    content: "";
+    clear: both;
+    display: block;
+  }
+  .fl_end::after{
+    content: "";
+    clear: both;
+    display: block;
+  }
+  .fourth_fl::after{
+    content: "";
+    clear: both;
+    display: block;
+  }
+  .f_fl, .sec_fl, .th_fl, .th_fl_left, .th_fl_rigth, .inside_fo_fl, .for_fl {
+    float: left;
+    outline: 2px solid SlateBlue;
+  }
+  .f_fl, .sec_rigth_fl, .first_f, .second_fl_rigth {
+      width: 400px;
+  }
+  .sec_left_fl, .second_fl_left{
+      width: 800px;
+  }
+  .th_fl_left, .th_left_fl{
+      width: 700px;
+  }
+  .th_fl_rigth, .third_rigth_fl{
+      width: 500px;
+  }
+  .fourth_fl_start, .fourth_fle{
+      width: 350px;
+  }
+  .fourth_fl_midl, .inside_flex{
+      width: 850px;
+  }
+  .th_fl_inside > p {
+    width: 350px;
+    float: left;
+  }
+  .for_fl, .for_flex p{
+      width: 425px;
+  }
+  .inside_fo_fl, .fourth_in_bl_start, p, .fourth_fle {
+    outline: 2px solid SlateBlue;
+  }
+  .first_fl, .third_fl, .btn, .first_flex, .third_flex{
+      background: Thistle;
+  }
+  .btn{
+      text-align: center;
+      padding: 20px 0;
+  }
+  .btn a:hover{
+      background: MediumPurple;
+  }
+  .btn a {
+    padding: 6px 12px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    background: PaleGreen;
+    box-sizing: border-box;
+  }
+/*******************flex******************/
+.first_flex, .second_flex, .third_flex, .third_f, .fourth_flex, .flex_end{
+    display: flex;
+}
